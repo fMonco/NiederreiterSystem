@@ -1,7 +1,5 @@
 # -- КРИПТОСИСТЕМА НИДЕРРАЙТЕРА --
-from common import *
-from generationKeys import *
-from HammingCode import *
+
 
 # шифрование Нидеррайтера (c = m * H(pub)^T)
 def encryptionVectorNiederreiter(inputVector, publicMatrix):

@@ -27,12 +27,11 @@ def generationPrivateKey(sourceMatrix):
         randomMatrix = generationRandomMatrix(height)
     # генерация матрицы перестановок P
     permutationMatrix = generationPermutationMatrix(length)
-    print("\nPermutation matrix P")
-    print(*permutationMatrix, sep='\n')
     return (randomMatrix, permutationMatrix)
     
 
 # M(pub)=S*M*P
 def generationPublicMatrix(randomMatrix, sourceMatrix, permutMatrix):
-    return multiMatrices(multiMatrices(randomMatrix, sourceMatrix), permutMatrix)
+    mult = multiMatrices(multiMatrices(randomMatrix, sourceMatrix), permutMatrix)
+    return mult
 

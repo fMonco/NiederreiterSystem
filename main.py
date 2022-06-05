@@ -62,7 +62,7 @@ def cryptosystemNiederreiter(inputText):
         
         # получение информационного вектора e * P^-1
         decryptedText.extend(multiMatrices([errorVector], reverseMatrix(transposeMatrix(permutationMatrix)))[0])
-    resultsyndrome.insert(0, errorVector)
+    #resultsyndrome.insert(0, errorVector)
     resultvectore.insert(0, decryptedText)
         
 

@@ -62,7 +62,7 @@ def cryptosystemNiederreiter(inputText):
         
         # получение информационного вектора e * P^-1
         decryptedText.extend(multiMatrices([errorVector], reverseMatrix(transposeMatrix(permutationMatrix)))[0])
-    #resultsyndrome.insert(0, errorVector)
+    resultsyndrome.insert(0, errorVector)
     resultvectore.insert(0, decryptedText)
         
 
@@ -83,7 +83,7 @@ def encode():
     resultbin.delete(0, 99999)
 
     keys.delete(0, 99999)
-    #resultsyndrome.delete(0, 99999)
+    resultsyndrome.delete(0, 99999)
     resultvectore.delete(0, 99999)
 
     
@@ -145,11 +145,11 @@ label2.pack()
 keys = tk.Entry(root, width = 25, borderwidth=1, font= 'Consolas 10', fg="Grey", bg="black", justify='center')
 keys.pack(pady=5)
 
-""" label2 = tk.Label(text="Syndrome", fg="Grey", bg="black")
+label2 = tk.Label(text="Syndrome", fg="Grey", bg="black")
 label2.pack()
 
 resultsyndrome = tk.Entry(root, width = 25, borderwidth=1, font= 'Consolas 10', fg="Grey", bg="black", justify='center')
-resultsyndrome.pack(pady=5) """
+resultsyndrome.pack(pady=5)
 
 label2 = tk.Label(text="Vector e", fg="Grey", bg="black")
 label2.pack()

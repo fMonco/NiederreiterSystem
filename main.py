@@ -43,7 +43,7 @@ def cryptosystemNiederreiter(inputText):
         for j in range(t):
             inputVector[j] = inputText[i+j]
         encryptedText.extend(encryptionVectorNiederreiter(inputVector, publicCheckMatrix))
-    print('\Закодированный текст\n', *encryptedText, sep='')
+    print('\nЗакодированный текст\n', *encryptedText, sep='')
     encrypted.insert(0, encryptedText)
     
     # дешифрование вектора

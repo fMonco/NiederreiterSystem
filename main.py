@@ -124,7 +124,7 @@ def on_closing():
 root.eval('tk::PlaceWindow . center')
 root.title("Niederreiter Cryptosystem")
 root.configure(bg="black")
-root.geometry('200x320')
+root.geometry('200x370')
 
 bttn = tk.Button(root, text="Encode", width = 25, borderwidth=3, font= 'Consolas 10', fg="Grey", bg="black", command = encode)
 bttn.pack(pady= 10)

@@ -83,7 +83,7 @@ def encode():
     resultbin.delete(0, 99999)
 
     keys.delete(0, 99999)
-    resultsyndrome.delete(0, 99999)
+    #resultsyndrome.delete(0, 99999)
     resultvectore.delete(0, 99999)
 
     
@@ -124,7 +124,7 @@ def on_closing():
 root.eval('tk::PlaceWindow . center')
 root.title("Niederreiter Cryptosystem")
 root.configure(bg="black")
-root.geometry('200x370')
+root.geometry('200x320')
 
 bttn = tk.Button(root, text="Encode", width = 25, borderwidth=3, font= 'Consolas 10', fg="Grey", bg="black", command = encode)
 bttn.pack(pady= 10)
@@ -145,11 +145,11 @@ label2.pack()
 keys = tk.Entry(root, width = 25, borderwidth=1, font= 'Consolas 10', fg="Grey", bg="black", justify='center')
 keys.pack(pady=5)
 
-label2 = tk.Label(text="Syndrome", fg="Grey", bg="black")
+""" label2 = tk.Label(text="Syndrome", fg="Grey", bg="black")
 label2.pack()
 
 resultsyndrome = tk.Entry(root, width = 25, borderwidth=1, font= 'Consolas 10', fg="Grey", bg="black", justify='center')
-resultsyndrome.pack(pady=5)
+resultsyndrome.pack(pady=5) """
 
 label2 = tk.Label(text="Vector e", fg="Grey", bg="black")
 label2.pack()
